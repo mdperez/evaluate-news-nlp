@@ -2,21 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Test</title>
+    <title>Evaluate News NLP</title>
   </head>
   <body>
     <header>
-      <div class="">
-        Logo
-      </div>
-      <div class="">
-        navigation
+      <div class="logo">
+        Evaluate News NLP
       </div>
     </header>
     <main>
       <section>
+        <h1>Write your text or the url (including protocol) on the following textarea to be analyzed:</h1>
         <form class="" onsubmit="return Client.handleSubmit(event)">
-          <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+          <textarea id="textToAnalyze" type="text" name="input" value=""></textarea>
           <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
         </form>
       </section>
@@ -25,8 +23,5 @@
         <div id="results"></div>
       </section>
     </main>
-    <footer>
-      <p>This is a footer</p>
-    </footer>
   </body>
 </html>
