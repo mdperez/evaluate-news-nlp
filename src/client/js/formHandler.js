@@ -33,8 +33,9 @@ function handleSubmit(event) {
   let formText = document.getElementById('name').value;
   Client.checkForName(formText);
   console.log("::: Form Submitted :::");
-  getData('http://localhost:8081/test').then((res) => {
-    document.getElementById('results').innerHTML = res.message;
+  getData('http://localhost:8081/credentials').then((res) => {
+    console.log(res);
+    // document.getElementById('results').innerHTML = res.message;
   });
 }
 

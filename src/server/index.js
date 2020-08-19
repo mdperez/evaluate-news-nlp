@@ -1,9 +1,5 @@
-const dotenv = require('dotenv');
-dotenv.config();
-
-var path = require('path');
 const express = require('express');
-const mockAPIResponse = require('./mockAPI.js');
+const credentials = require('./credentials.js');
 
 const app = express();
 
@@ -21,9 +17,9 @@ app.listen(8081, function () {
 });
 
 app.get('/', function (req, res) {
-  res.sendFile('dist/index.html')
+  res.sendFile('dist/index.html');
 });
 
-app.get('/test', function (req, res) {
-  res.send(mockAPIResponse)
+app.get('/credentials', function (req, res) {
+  res.send(credentials);
 });
