@@ -35,8 +35,7 @@ function handleSubmit(event) {
   getData('http://localhost:8081/credentials').then((res) => {
     const url = `https://api.meaningcloud.com/sentiment-2.1?key=${res.key}&${format}=${textarea}&lang=auto`;
     postData(url).then((res) => {
-      console.log(res);
-      // updateUI();
+      Client.updateUI(res);
     });
   });
 }
