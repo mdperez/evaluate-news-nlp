@@ -1,13 +1,18 @@
 import { checkFormat } from './js/formatChecker';
 import { handleSubmit } from './js/formHandler';
-import { updateUI } from './js/interfaceUpdater';
+import { updateUI, cleanResults } from './js/interfaceUpdater';
+import { sendError, cleanErrors } from './js/errorHandler';
 import './styles/resets.scss';
 import './styles/base.scss';
 import './styles/form.scss';
 import './styles/header.scss';
+import './styles/errorMessages.scss';
 
 export {
   checkFormat,
   handleSubmit,
-  updateUI
+  updateUI,
+  cleanResults,
+  sendError,
+  cleanErrors
 }

@@ -1,6 +1,5 @@
 
 function updateUI(data) {
-  console.log(data);
   const result = `
     <div id="agreement"><strong>Agreement:</strong> ${data.agreement}</div>
     <div id="confidence"><strong>Confidence:</strong> ${data.confidence}</div>
@@ -10,4 +9,8 @@ function updateUI(data) {
   document.getElementById("results").innerHTML = result;
 }
 
-export { updateUI }
+const cleanResults = () => {
+  document.getElementById("results").innerHTML  = "";
+}
+
+export { updateUI, cleanResults }
