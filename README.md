@@ -31,3 +31,4 @@
 
 ## Notes
 - You need to run both enviroments to test the app.
+- Make sure you are running an actual node version (tested with 10.10)
